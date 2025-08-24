@@ -86,7 +86,7 @@ platform_do_upgrade() {
 	netgear,wac124|\
 	netgear,wax202|\
 	netis,wf2881|\
-	notion,r281|\
+	orbitpro,hkm281|\
 	raisecom,msg1500-x-00|\
 	sercomm,na502|\
 	sercomm,na502s|\
