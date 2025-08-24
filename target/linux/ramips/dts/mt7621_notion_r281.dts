@@ -7,8 +7,8 @@
 #include <dt-bindings/leds/common.h>
 
 / {
-	compatible = "notion,r281", "mediatek,mt7621-soc";
-	model = "Notion R281";
+	compatible = "orbitpro,hkm281", "mediatek,mt7621-soc";
+	model = "Orbit Pro HKM281";
 
 	aliases {
 		led-boot = &boot_red;
