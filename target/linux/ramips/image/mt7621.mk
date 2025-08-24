@@ -1520,7 +1520,7 @@ define Device/netis_wf2881
 endef
 TARGET_DEVICES += netis_wf2881
 
-define Device/notion_r281
+define Device/orbitpro_hkm281
   $(Device/dsa-migration)
   $(Device/uimage-lzma-loader)
   BLOCKSIZE := 128k
@@ -1532,12 +1532,12 @@ define Device/notion_r281
   IMAGE/sysupgrade.bin := sysupgrade-tar | append-metadata
   IMAGE/factory.bin := append-kernel | pad-to $$$$(KERNEL_SIZE) | append-ubi | \
 	check-size
-  DEVICE_VENDOR := Notion
-  DEVICE_MODEL := R281
+  DEVICE_VENDOR := Orbitpro
+  DEVICE_MODEL := HKM281
   DEVICE_PACKAGES := kmod-mt7603 kmod-mt7615e kmod-mt7663-firmware-ap kmod-usb3 \
 	kmod-usb-net-rndis comgt-ncm uboot-envtools
 endef
-TARGET_DEVICES += notion_r281
+TARGET_DEVICES += orbitpro_hkm281
 
 define Device/oraybox_x3a
   $(Device/dsa-migration)
